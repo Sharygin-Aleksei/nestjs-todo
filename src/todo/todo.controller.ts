@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Post, Query, UseGuards } from '@nestjs/common';
 import { Todo } from './todo.model';
 import { TodoService } from './todo.service';
-import { JwtAuthGuard } from '../auth/jwtAuth.guard';
+import { JwtAuthGuard } from '../auth/guard/jwtAuth.guard';
 
 @Controller('todo')
 @UseGuards(JwtAuthGuard)

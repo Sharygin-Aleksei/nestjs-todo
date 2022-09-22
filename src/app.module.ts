@@ -5,7 +5,12 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/nest'), TodoModule, AuthModule, UsersModule],
+  imports: [
+    MongooseModule.forRoot('mongodb://localhost/nest'),
+    TodoModule,
+    AuthModule,
+    UsersModule,
+  ],
   controllers: [],
   providers: [],
 })
